@@ -6,7 +6,7 @@ FROM quay.io/pypa/manylinux_2_28_x86_64@sha256:cea0ade79068b36deae7eb7a04b4192e5
 
 RUN yum install -y epel-release && \
     yum install -y ccache clang lld && \
-    yum install -y capstone-devel tbb-devel libzstd-devel && \
+    yum install -y libzstd-devel && \
     yum clean all && \
     rm -rf /var/cache/yum
 
